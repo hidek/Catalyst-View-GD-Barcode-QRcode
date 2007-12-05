@@ -1,0 +1,14 @@
+Revision history for Perl module Catalyst::View::GD::Barcode::QRcode
+
+0.04 Fri Nov  3 2006
+    - pod synopsis fix
+    - bug: add use GD::Barcode::QRcode (thx: miyagawa)
+
+0.03 Wed May 17 19:40:19 2006
+    - typo fix
+
+0.02 Wed May 17 19:24:22 2006
+    - pod fix
+
+0.01 Wed May 17 11:15:07 2006
+    - initial release

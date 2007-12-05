@@ -1,0 +1,10 @@
+MANIFEST
+README
+LICENSE
+Changes
+t/pod.t
+Makefile.PL
+lib/Catalyst/View/GD/Barcode/QRcode.pm
+lib/Catalyst/Helper/View/GD/Barcode/QRcode.pm
+t/01_load.t
+META.yml                                 Module meta-data (added by MakeMaker)
