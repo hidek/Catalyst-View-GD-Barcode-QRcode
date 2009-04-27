@@ -1,14 +1,15 @@
-use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
-WriteMakefile(
-    NAME         => 'Catalyst::View::GD::Barcode::QRcode',
-    VERSION_FROM => 'lib/Catalyst/View/GD/Barcode/QRcode.pm', # finds $VERSION
-    AUTHOR       => 'Hideo Kimura (hide@hide-k.net)',
-    ABSTRACT     => 'Module abstract (<= 44 characters) goes here',
-    PREREQ_PM    => {
-                     'Test::Simple' => 0.44,
-                     'Catalyst' => 5.5,
-                     'GD::Barcode::QRcode' => 0.01,
-                    },
-);
+use inc::Module::Install;
+name 'Catalyst-View-GD-Barcode-QRcode';
+all_from 'lib/Catalyst/View/GD/Barcode/QRcode.pm';
+
+requires 'Catalyst', 5.60;
+requires 'GD::Barcode::QRcode', 0.01;
+requires 'MRO::Compat';
+
+tests 't/*.t';
+author_tests 'xt';
+
+build_requires 'Test::More';
+use_test_base;
+auto_include;
+WriteAll;

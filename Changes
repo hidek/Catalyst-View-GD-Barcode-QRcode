@@ -1,5 +1,9 @@
 Revision history for Perl module Catalyst::View::GD::Barcode::QRcode
 
+0.05 Mon Apr 27 11:19:28 2009
+    - Use MRO::Compat instead of NEXT. (thx: ZARQUON)
+    - switch to Module::Install base
+
 0.04 Fri Nov  3 2006
     - pod synopsis fix
     - bug: add use GD::Barcode::QRcode (thx: miyagawa)
