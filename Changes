@@ -1,4 +1,7 @@
 Revision history for Perl module Catalyst::View::GD::Barcode::QRcode
+0.09 Fri Aug  7 2009
+	- no change, reset version of Helper module
+
 0.08 Fri Aug  7 2009
 	- no change, just failed to shipit, AGAIN
 
