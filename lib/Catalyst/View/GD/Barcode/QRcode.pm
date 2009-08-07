@@ -2,6 +2,7 @@ package Catalyst::View::GD::Barcode::QRcode;
 
 use strict;
 use warnings;
+
 our $VERSION = '0.05';
 
 use base qw(Catalyst::View);
@@ -12,9 +13,8 @@ use GD::Barcode::QRcode;
 __PACKAGE__->mk_accessors(qw( ecc version module_size img_type ));
 
 sub new {
-    my ($self) = shift;
-    my ($c, $args) = @_;
-    my $self = $self->next::method(@_);
+    my ($class, $c, $args) = @_;
+    my $self = $class->next::method($c, $args);
 
     for my $field (keys %$args) {
         if ($self->can($field)) {
