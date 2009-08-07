@@ -1,4 +1,7 @@
 Revision history for Perl module Catalyst::View::GD::Barcode::QRcode
+0.07 Fri Aug  7 2009
+	- no change, just failed to shipit
+
 0.06 Fri Aug  7 2009
 	- moved github 
 	  http://github.com/hidek/Catalyst-View-GD-Barcode-QRcode/tree/master
