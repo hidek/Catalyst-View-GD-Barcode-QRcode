@@ -3,7 +3,7 @@ package Catalyst::View::GD::Barcode::QRcode;
 use strict;
 use warnings;
 
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 use base qw(Catalyst::View);
 
