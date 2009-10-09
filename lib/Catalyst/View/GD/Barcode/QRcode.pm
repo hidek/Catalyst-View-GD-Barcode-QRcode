@@ -16,13 +16,11 @@ sub new {
     my ($class, $c, $args) = @_;
     my $self = $class->next::method($c, $args);
 
-    for my $field (keys %$args) {
-        if ($self->can($field)) {
-            $self->$field($args->{$field});
-        } else {
-            $c->log->debug("Unknown config parameter $field") if $c->debug;
-        }
-    }
+    $self->ecc($args->{ecc});
+    $self->version($args->{version});
+    $self->module_size($args->{module_size});
+    $self->img_type($args->{img_type});
+
     return $self
 }
 
